@@ -8,8 +8,7 @@ import Footer from '../components/Footer'
 function HomePage() {
     return (
         <Fragment>
-            <Header />
-            <Footer />
+            BODY
         </Fragment>
 
     )
