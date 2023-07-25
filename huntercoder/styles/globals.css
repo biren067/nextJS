@@ -16,13 +16,27 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-/*  */
+/* ========== Header ========= */
+.mainnav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+  border-bottom: 2px solid #4a7815;
+  background-color: black;
+  color: aliceblue;
+  padding: 15px 0px;
+}
+
+.list-items {
+  padding: 2px 15px;
+  font-weight: 700;
+}
+
+.list-group {
+  display: flex;
+
+  /* flex-direction: row;
+  justify-content: center; */
+}
+
+/* ============= Footer =============== */
