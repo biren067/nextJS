@@ -9,6 +9,8 @@
 /tutorial_02/.next/
 /tutorial_03/.next/
 /huntercoder/.next/
+
+
 /.pnp
 .pnp.js
 
@@ -40,3 +42,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+################# django ##################
+/backend/main/api/__pycache__
+/backend/main/api/migrations
+/backend/main/main/__pycache__
+/backend/main/main/migrations
