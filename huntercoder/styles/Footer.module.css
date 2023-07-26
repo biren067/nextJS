@@ -1,0 +1,15 @@
+/* =============Begin Footer =============== */
+.footer {
+    color: var(--text-color-grey)
+}
+
+.footer_primary {
+    background-color: var(--bg-color-light);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.footer_secondary {
+    background-color: var(--bg-color-dark);
+}

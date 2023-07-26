@@ -1,0 +1,22 @@
+/* ========== Header ========= */
+.mainnav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    /* border-bottom: 2px solid #4a7815; */
+    background-color: var(--bg-color-dark);
+    color: aliceblue;
+    padding: 15px 0px;
+}
+
+.list_item {
+    padding: 2px 15px;
+    font-weight: 400;
+}
+
+.list_group {
+    display: flex;
+
+    /* flex-direction: row;
+  justify-content: center; */
+}
