@@ -4,7 +4,8 @@ import React, { Fragment, useState, useEffect } from 'react'
 // import Script from 'next/script'
 // import Header from '../components/Header'
 // import Footer from '../components/Footer'
-import styles from '../styles/Header.module.css'
+import Link from 'next/link'
+import styles from '../styles/Blog.module.css'
 
 function HomePage() {
     const [blogList, getBlogList] = useState(null);
@@ -24,19 +25,21 @@ function HomePage() {
             }
         }
         list_of_post()
-    }, []);
+    });
     return (
         <Fragment>
-            {/* <ul className={styles.list_group}> */}
-            {blogList.map(item => (
-                <li key={item.title}>
-                    <div>{item.title}</div>
-                    <div>{item.content}</div>
-                    <div>{item.post_date}</div>
-                </li>
-            ))}
-            {/* </ul> */}
-            {JSON.stringify(blogList)}
+            <ul>
+                {blogList && blogList.map(item => (
+                    <li className={styles.blog_group} key={item.title}>
+                        <div className={styles.blog_title}>
+                            <Link href={`${item.title}`}>{item.title}</Link>
+                        </div>
+                        <div className={styles.blog_content}>{item.content}</div>
+                        <div className={styles.blog_date}>publised on: {item.post_date}</div>
+                    </li>
+                ))}
+            </ul>
+            {/* {JSON.stringify(blogList)} */}
         </Fragment>
 
     )
