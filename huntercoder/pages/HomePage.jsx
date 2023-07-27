@@ -32,7 +32,7 @@ function HomePage() {
                 {blogList && blogList.map(item => (
                     <li className={styles.blog_group} key={item.title}>
                         <div className={styles.blog_title}>
-                            <Link href={`blogpost/${item.title}`}>{item.title}</Link>
+                            <Link href={`blogpost/${item.title.replaceAll(" ", "-")}`}>{item.title}</Link>
                         </div>
                         <div className={styles.blog_content}>{item.content}</div>
                         <div className={styles.blog_date}>publised on: {item.post_date}</div>

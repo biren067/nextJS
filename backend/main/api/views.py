@@ -14,6 +14,8 @@ from rest_framework.response import Response
 class BlogPostAPI(APIView):
     def get(self,request,title=None,format=None):
         if title is not None:
+            title=title.replace("-"," ")
+            # print("Title::",title)
             posts = BlogPost.objects.get(title=title)
             serializer = BlogPostSerializer(posts)
             return Response(serializer.data)
